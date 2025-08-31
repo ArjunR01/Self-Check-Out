@@ -1,0 +1,10 @@
+INFO:     Will watch for changes in these directories: ['/Users/arjun/Downloads/project']
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [11255] using WatchFiles
+INFO:     Started server process [11288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54694 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54697 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54712 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54712 - "GET /openapi.json HTTP/1.1" 200 OK

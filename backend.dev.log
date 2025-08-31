@@ -1,0 +1,211 @@
+INFO:     Will watch for changes in these directories: ['/Users/arjun/Downloads/project']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [2853] using WatchFiles
+INFO:     Started server process [2886]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49311 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49387 - "OPTIONS /auth/customer/login HTTP/1.1" 200 OK
+(trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/arjun/Downloads/project/backend/.venv/lib/python3.13/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+INFO:     127.0.0.1:49387 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49389 - "OPTIONS /cart/finalize-from-items HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49389 - "POST /cart/finalize-from-items HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49392 - "OPTIONS /auth/official/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49392 - "POST /auth/official/login HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:49392 - "POST /auth/official/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49392 - "OPTIONS /analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49394 - "GET /analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49394 - "GET /analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49396 - "POST /auth/official/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49396 - "GET /analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49396 - "GET /analytics/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "OPTIONS /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49400 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49402 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49402 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49400 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49400 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49398 - "POST /auth/customer/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49490 - "OPTIONS /auth/customer/signup HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49490 - "POST /auth/customer/signup HTTP/1.1" 422 Unprocessable Content
+WARNING:  WatchFiles detected changes in 'backend/app/models.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2886]
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/utils/pdf.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/products.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/config.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/auth.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/carts.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/invoices.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/customers.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/scripts/seed.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/tests/test_core.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/tests/test_core.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/tests/test_core.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/invoices.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/tests/test_core.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv/lib/python3.13/site-packages/google/auth/compute_engine/_metadata.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8649.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5958.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5753.py', '.venv/lib/python3.13/site-packages/google/oauth2/gdch_credentials.py', '.venv/lib/python3.13/site-packages/cachetools/_decorators.py', '.venv/lib/python3.13/site-packages/google/auth/external_account_authorized_user.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7296.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2511.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4210.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc1901.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8479.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5990.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/base.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8398.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2634.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8418.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5915.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5639.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3161.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7585.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8696.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4476.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6010.py', '.venv/lib/python3.13/site-packages/google/auth/compute_engine/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3125.py', '.venv/lib/python3.13/site-packages/google/auth/jwt.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8702.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8419.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7030.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3412.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8692.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4073.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/es256.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7906.py', '.venv/lib/python3.13/site-packages/google/auth/aws.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc1902.py', '.venv/lib/python3.13/site-packages/google/oauth2/webauthn_handler.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/_python_rsa.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3852.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5636.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7914.py', '.venv/lib/python3.13/site-packages/google/auth/_default_async.py', '.venv/lib/python3.13/site-packages/google/auth/aio/transport/sessions.py', '.venv/lib/python3.13/site-packages/google/oauth2/_service_account_async.py', '.venv/lib/python3.13/site-packages/google/auth/_credentials_async.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3281.py', '.venv/lib/python3.13/site-packages/google/oauth2/id_token.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8619.py', '.venv/lib/python3.13/site-packages/google/auth/downscoped.py', '.venv/lib/python3.13/site-packages/google/auth/version.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3657.py', '.venv/lib/python3.13/site-packages/google/oauth2/_client_async.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8358.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4985.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3058.py', '.venv/lib/python3.13/site-packages/google/oauth2/service_account.py', '.venv/lib/python3.13/site-packages/google/oauth2/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6019.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6187.py', '.venv/lib/python3.13/site-packages/google/oauth2/_credentials_async.py', '.venv/lib/python3.13/site-packages/google/oauth2/sts.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5280.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3770.py', '.venv/lib/python3.13/site-packages/cachetools/func.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3274.py', '.venv/lib/python3.13/site-packages/google/auth/aio/transport/aiohttp.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6487.py', '.venv/lib/python3.13/site-packages/google/oauth2/_reauth_async.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7191.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5126.py', '.venv/lib/python3.13/site-packages/google/oauth2/credentials.py', '.venv/lib/python3.13/site-packages/google/auth/transport/_mtls_helper.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4334.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4683.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5480.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3739.py', '.venv/lib/python3.13/site-packages/google/auth/aio/_helpers.py', '.venv/lib/python3.13/site-packages/google/auth/environment_vars.py', '.venv/lib/python3.13/site-packages/google/auth/exceptions.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7292.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5934.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5084.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2437.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8209.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4491.py', '.venv/lib/python3.13/site-packages/google/auth/_cloud_sdk.py', '.venv/lib/python3.13/site-packages/google/auth/transport/urllib3.py', '.venv/lib/python3.13/site-packages/google/auth/_default.py', '.venv/lib/python3.13/site-packages/google/auth/transport/_http_client.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2986.py', '.venv/lib/python3.13/site-packages/google/auth/credentials.py', '.venv/lib/python3.13/site-packages/google/auth/transport/_aiohttp_requests.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5649.py', '.venv/lib/python3.13/site-packages/google/auth/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5083.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3537.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5916.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8410.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8018.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4043.py', '.venv/lib/python3.13/site-packages/google/auth/_refresh_worker.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc1905.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2251.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4357.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6170.py', '.venv/lib/python3.13/site-packages/google/oauth2/utils.py', '.venv/lib/python3.13/site-packages/google/auth/transport/grpc.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6120.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7229.py', '.venv/lib/python3.13/site-packages/google/oauth2/webauthn_handler_factory.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5914.py', '.venv/lib/python3.13/site-packages/google/auth/transport/mtls.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5924.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7633.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7773.py', '.venv/lib/python3.13/site-packages/google/oauth2/reauth.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3820.py', '.venv/lib/python3.13/site-packages/google/auth/compute_engine/credentials.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3565.py', '.venv/lib/python3.13/site-packages/cachetools/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2560.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8520.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4108.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6402.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8494.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6664.py', '.venv/lib/python3.13/site-packages/google/auth/transport/_custom_tls_signer.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/_helpers.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4490.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2631.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5208.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6032.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2315.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3560.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8017.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4010.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/rsa.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc1155.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8360.py', '.venv/lib/python3.13/site-packages/google/oauth2/_id_token_async.py', '.venv/lib/python3.13/site-packages/google/auth/_exponential_backoff.py', '.venv/lib/python3.13/site-packages/google/auth/_helpers.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3280.py', '.venv/lib/python3.13/site-packages/google/oauth2/_client.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3709.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5697.py', '.venv/lib/python3.13/site-packages/google/auth/api_key.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6486.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5652.py', '.venv/lib/python3.13/site-packages/google/auth/aio/__init__.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6211.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8103.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4387.py', '.venv/lib/python3.13/site-packages/google/auth/iam.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2985.py', '.venv/lib/python3.13/site-packages/google/auth/_oauth2client.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6955.py', '.venv/lib/python3.13/site-packages/google/auth/crypt/_cryptography_rsa.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5035.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8226.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8708.py', '.venv/lib/python3.13/site-packages/google/auth/_credentials_base.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5752.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5913.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6210.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6031.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5917.py', '.venv/lib/python3.13/site-packages/google/oauth2/challenges.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/pem.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2459.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3370.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc1157.py', '.venv/lib/python3.13/site-packages/google/auth/identity_pool.py', '.venv/lib/python3.13/site-packages/google/auth/transport/__init__.py', '.venv/lib/python3.13/site-packages/google/auth/pluggable.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5275.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6482.py', '.venv/lib/python3.13/site-packages/google/auth/aio/credentials.py', '.venv/lib/python3.13/site-packages/cachetools/keys.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5755.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5751.py', '.venv/lib/python3.13/site-packages/google/auth/metrics.py', '.venv/lib/python3.13/site-packages/google/auth/impersonated_credentials.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2314.py', '.venv/lib/python3.13/site-packages/google/auth/transport/requests.py', '.venv/lib/python3.13/site-packages/google/auth/app_engine.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3779.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc8769.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3279.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7508.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4055.py', '.venv/lib/python3.13/site-packages/google/auth/aio/transport/__init__.py', '.venv/lib/python3.13/site-packages/google/auth/external_account.py', '.venv/lib/python3.13/site-packages/google/auth/_service_account_info.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc2876.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3414.py', '.venv/lib/python3.13/site-packages/google/auth/_jwt_async.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3114.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc3447.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc7894.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc6960.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc4211.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/rfc5940.py', '.venv/lib/python3.13/site-packages/google/oauth2/webauthn_types.py', '.venv/lib/python3.13/site-packages/pyasn1_modules/__init__.py', '.venv/lib/python3.13/site-packages/google/auth/transport/_requests_base.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in '.venv/lib/python3.13/site-packages/requests/packages.py', '.venv/lib/python3.13/site-packages/urllib3/util/proxy.py', '.venv/lib/python3.13/site-packages/urllib3/util/ssl_.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/emscripten/request.py', '.venv/lib/python3.13/site-packages/urllib3/connection.py', '.venv/lib/python3.13/site-packages/requests/compat.py', '.venv/lib/python3.13/site-packages/certifi/__init__.py', '.venv/lib/python3.13/site-packages/requests/auth.py', '.venv/lib/python3.13/site-packages/urllib3/util/wait.py', '.venv/lib/python3.13/site-packages/urllib3/exceptions.py', '.venv/lib/python3.13/site-packages/urllib3/util/ssltransport.py', '.venv/lib/python3.13/site-packages/certifi/__main__.py', '.venv/lib/python3.13/site-packages/requests/__init__.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/emscripten/response.py', '.venv/lib/python3.13/site-packages/requests/exceptions.py', '.venv/lib/python3.13/site-packages/urllib3/util/request.py', '.venv/lib/python3.13/site-packages/urllib3/__init__.py', '.venv/lib/python3.13/site-packages/urllib3/util/__init__.py', '.venv/lib/python3.13/site-packages/urllib3/filepost.py', '.venv/lib/python3.13/site-packages/urllib3/http2/__init__.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/__init__.py', '.venv/lib/python3.13/site-packages/requests/certs.py', '.venv/lib/python3.13/site-packages/urllib3/_base_connection.py', '.venv/lib/python3.13/site-packages/urllib3/poolmanager.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/pyopenssl.py', '.venv/lib/python3.13/site-packages/certifi/core.py', '.venv/lib/python3.13/site-packages/requests/sessions.py', '.venv/lib/python3.13/site-packages/urllib3/fields.py', '.venv/lib/python3.13/site-packages/urllib3/util/ssl_match_hostname.py', '.venv/lib/python3.13/site-packages/requests/models.py', '.venv/lib/python3.13/site-packages/urllib3/util/connection.py', '.venv/lib/python3.13/site-packages/urllib3/util/retry.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/emscripten/fetch.py', '.venv/lib/python3.13/site-packages/requests/help.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/emscripten/__init__.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/emscripten/connection.py', '.venv/lib/python3.13/site-packages/urllib3/contrib/socks.py', '.venv/lib/python3.13/site-packages/urllib3/_version.py', '.venv/lib/python3.13/site-packages/requests/cookies.py', '.venv/lib/python3.13/site-packages/urllib3/connectionpool.py', '.venv/lib/python3.13/site-packages/urllib3/_collections.py', '.venv/lib/python3.13/site-packages/urllib3/_request_methods.py', '.venv/lib/python3.13/site-packages/requests/hooks.py', '.venv/lib/python3.13/site-packages/requests/_internal_utils.py', '.venv/lib/python3.13/site-packages/requests/api.py', '.venv/lib/python3.13/site-packages/urllib3/util/timeout.py', '.venv/lib/python3.13/site-packages/urllib3/util/response.py', '.venv/lib/python3.13/site-packages/urllib3/http2/probe.py', '.venv/lib/python3.13/site-packages/urllib3/response.py', '.venv/lib/python3.13/site-packages/urllib3/http2/connection.py', '.venv/lib/python3.13/site-packages/requests/utils.py', '.venv/lib/python3.13/site-packages/urllib3/util/util.py', '.venv/lib/python3.13/site-packages/requests/adapters.py', '.venv/lib/python3.13/site-packages/requests/structures.py', '.venv/lib/python3.13/site-packages/urllib3/util/url.py', '.venv/lib/python3.13/site-packages/requests/__version__.py', '.venv/lib/python3.13/site-packages/requests/status_codes.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/routers/invoices.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/__init__.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/scripts/seed.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/scripts/seed.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/main.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>

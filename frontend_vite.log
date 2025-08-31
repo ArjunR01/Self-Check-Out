@@ -1,0 +1,10 @@
+
+> self-checkout-frontend@0.1.0 dev
+> vite --port 5173 --strictPort
+
+
+  VITE v5.4.19  ready in 75 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
