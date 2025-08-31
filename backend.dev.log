@@ -209,3 +209,24 @@ OSError: [Errno 9] Bad file descriptor
 
 Current thread 0x000000020d45a0c0 (most recent call first):
   <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/config.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/config.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
+WARNING:  WatchFiles detected changes in 'backend/app/database.py'. Reloading...
+Fatal Python error: init_sys_streams: can't initialize sys standard streams
+Python runtime state: core initialized
+OSError: [Errno 9] Bad file descriptor
+
+Current thread 0x000000020d45a0c0 (most recent call first):
+  <no Python frame>
