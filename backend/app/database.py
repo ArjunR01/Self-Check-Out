@@ -19,6 +19,7 @@ if resolved_db_url.startswith("sqlite"):
     connect_args = {"check_same_thread": False}
 
 engine = create_engine(resolved_db_url, echo=False, future=True, connect_args=connect_args)
+
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine, future=True)
 Base = declarative_base()
 
