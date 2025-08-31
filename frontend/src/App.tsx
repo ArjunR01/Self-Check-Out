@@ -15,6 +15,15 @@ function Nav() {
     const t = getTokens()
     setRole(t?.role ?? null)
   }, [])
+ 
+  // const [role, setRole] = useState<string | null>(getTokens()?.role ?? null)
+
+// Call this on logout
+const handleLogout = () => {
+  logout()
+  setRole(null)
+}
+
   return (
     <nav className="flex items-center justify-between p-4 bg-white shadow">
       <div className="flex gap-4">
@@ -35,11 +44,11 @@ function Nav() {
         {role ? (
           <>
             <span className="text-sm text-gray-600">{role}</span>
-            <button onClick={() => { logout(); window.location.href = '/' }} className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Logout</button>
+            <button onClick={() => { handleLogout(); window.location.href = '/' }} className="px-3 py-1 rounded bg-gray-100 hover:bg-gray-200">Logout</button>
           </>
         ) : (
           <>
-            <Link to="/customer/login" className="px-3 py-1 rounded bg-blue-600 text-white">Login / Register (Google)</Link>
+            <Link to="/customer/login" className="px-3 py-1 rounded bg-blue-600 text-white">Login / Register </Link>
           </>
         )}
       </div>

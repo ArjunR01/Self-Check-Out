@@ -57,8 +57,8 @@ export function CustomerLogin() {
     <div className="max-w-md mx-auto p-6">
       <h2 className="text-xl font-semibold mb-4">Customer Login</h2>
       <div className="space-y-3">
-        <button onClick={loginWithGoogle} className="w-full bg-red-500 text-white rounded p-2">Sign in with Google</button>
-        <div className="text-xs text-gray-500">Google sign-in is required for customers. The form below is provided for local development.</div>
+        {/* <button onClick={loginWithGoogle} className="w-full bg-red-500 text-white rounded p-2">Sign in with Google</button>
+        <div className="text-xs text-gray-500">Google sign-in is required for customers. The form below is provided for local development.</div> */}
       </div>
       <form onSubmit={onSubmit} className="space-y-3 mt-4">
         <input className="w-full border rounded p-2" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
