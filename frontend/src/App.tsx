@@ -28,8 +28,12 @@ const handleLogout = () => {
     <nav className="flex items-center justify-between p-4 bg-white shadow">
       <div className="flex gap-4">
         <Link to="/" className="font-semibold">Self-Checkout</Link>
-        <Link to="/customer/scan" className="text-blue-600">Scan</Link>
-        <Link to="/customer/cart" className="text-blue-600">Cart</Link>
+         {(role === 'customer' || role === null) && (
+    <>
+      <Link to="/customer/scan" className="text-blue-600">Scan</Link>
+      <Link to="/customer/cart" className="text-blue-600">Cart</Link>
+    </>
+  )}
         {role === 'customer' && (
           <Link to="/customer/history" className="text-blue-600">History</Link>
         )}

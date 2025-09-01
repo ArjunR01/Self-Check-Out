@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import api from '../../lib/api'
 import { formatINR } from '../../utils/format'
+import { DateTime } from "luxon"
 
 interface Invoice { id: number, code: string, total: number, date: string, status: string }
 
@@ -52,7 +53,10 @@ export function CustomerHistory() {
             {invoices.map(inv => (
               <tr key={inv.id} className="border-b">
                 <td className="p-2 font-mono">{inv.code}</td>
-                <td className="p-2">{new Date(inv.date).toLocaleString('en-IN')}</td>
+                {/* <td className="p-2">{new Date(inv.date).toLocaleString('en-IN')}</td> */}
+                <td className="p-2">{DateTime.fromISO(inv.date, { zone: "utc" })
+    .setZone("Asia/Kolkata")
+    .toFormat("dd/MM/yyyy hh:mm a")}</td>
                 <td className="p-2">{formatINR(inv.total)}</td>
                 <td className="p-2">{inv.status}</td>
                 <td className="p-2">

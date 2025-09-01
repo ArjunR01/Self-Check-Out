@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import api from '../../lib/api'
 import { setTokens } from '../../lib/auth'
+import { Link, Navigate, Route, Routes } from 'react-router-dom'
 
 export function OfficialLogin() {
   const [email, setEmail] = useState('')
@@ -15,7 +16,7 @@ export function OfficialLogin() {
     try {
       const res = await api.post('/auth/official/login', { email, password })
       setTokens(res.data.access_token, res.data.role)
-      navigate('/official/dashboard')
+      window.location.href = '/official/dashboard';
     } catch (err: any) {
       setError(err?.response?.data?.detail || 'Login failed')
     }
@@ -30,7 +31,7 @@ export function OfficialLogin() {
         {error && <div className="text-red-600 text-sm">{error}</div>}
         <button className="w-full bg-purple-700 text-white rounded p-2">Login</button>
       </form>
-    </div>
+    </div>    
   )
 }
 

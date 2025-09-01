@@ -35,6 +35,7 @@ export function OfficialFetchBill() {
       scannerInstanceRef.current = h5
       await h5.start({ facingMode: 'environment' }, { fps: 10, qrbox: 250 }, (decodedText: string) => {
         fetchBill(decodedText)
+        stopScanner()
       })
       setScanning(true)
     } catch (e: any) {
@@ -55,6 +56,7 @@ export function OfficialFetchBill() {
     try {
       const res = await api.post(`/invoices/${bill.id}/pay`)
       setBill(res.data)
+      window.location.href = `/invoices/${bill.id}/pdf`;
     } catch (e: any) {
       setError(e?.response?.data?.detail || 'Failed to mark paid')
     }
