@@ -13,6 +13,19 @@ from ..utils.pdf import build_invoice_pdf
 from ..utils.qr import generate_qr_png
 from ..utils.mailer import send_invoice_email_if_enabled
 
+from pytz import timezone
+
+IST = timezone("Asia/Kolkata")
+
+def to_ist(dt: datetime) -> datetime:
+    if dt is None:
+        return None
+    if dt.tzinfo is None:
+        # assume UTC if no tz info
+        dt = dt.replace(tzinfo=timezone("UTC"))
+    return dt.astimezone(IST)
+
+
 router = APIRouter(prefix="/invoices", tags=["invoices"])
 
 
@@ -50,7 +63,7 @@ def get_invoice_by_code(code: str, db: Session = Depends(get_db), official: mode
             customer_id=invoice.customer_id,
             cart_id=invoice.cart_id,
             total=invoice.total,
-            date=invoice.date,
+            date=to_ist(invoice.date),
             status=invoice.status.value,
             items=items,
             customer_name=invoice.customer.name,
@@ -94,7 +107,7 @@ def pay_invoice(id: int, db: Session = Depends(get_db), official: models.StoreOf
         customer_id=invoice.customer_id,
         cart_id=invoice.cart_id,
         total=invoice.total,
-        date=invoice.date,
+        date=to_ist(invoice.date),
         status=invoice.status.value,
     )
 
@@ -112,7 +125,7 @@ def mark_paid(code: str, db: Session = Depends(get_db), official: models.StoreOf
             customer_id=invoice.customer_id,
             cart_id=invoice.cart_id,
             total=invoice.total,
-            date=invoice.date,
+            date=to_ist(invoice.date),
             status=invoice.status.value,
         )
     invoice.status = models.InvoiceStatus.paid
@@ -134,7 +147,7 @@ def mark_paid(code: str, db: Session = Depends(get_db), official: models.StoreOf
         customer_id=invoice.customer_id,
         cart_id=invoice.cart_id,
         total=invoice.total,
-        date=invoice.date,
+        date=to_ist(invoice.date),
         status=invoice.status.value,
     )
 
@@ -189,7 +202,7 @@ def my_invoices(db: Session = Depends(get_db), customer: models.Customer = Depen
             customer_id=i.customer_id,
             cart_id=i.cart_id,
             total=i.total,
-            date=i.date,
+            date=to_ist(i.date),
             status=i.status.value,
         )
         for i in invoices

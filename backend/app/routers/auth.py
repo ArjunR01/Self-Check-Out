@@ -11,8 +11,8 @@ from ..security import decode_token
 from pydantic import BaseModel, EmailStr
 
 # Google id_token verification
-from google.oauth2 import id_token as google_id_token
-from google.auth.transport import requests as google_requests
+# from google.oauth2 import id_token as google_id_token
+# from google.auth.transport import requests as google_requests
 from ..config import GOOGLE_CLIENT_ID
 
 router = APIRouter(prefix="/auth", tags=["auth"])
