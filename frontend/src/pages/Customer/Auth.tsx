@@ -16,8 +16,8 @@ export function CustomerLogin() {
     try {
       const res = await api.post('/auth/customer/login', { email, password })
       setTokens(res.data.access_token, res.data.role)
-      navigate('/customer/cart')
-      // window.location.href = '/customer/cart';
+      // navigate('/customer/cart')
+      window.location.href = '/';
       setLog(true);
     } catch (err: any) {
       setError(err?.response?.data?.detail || 'Login failed')
